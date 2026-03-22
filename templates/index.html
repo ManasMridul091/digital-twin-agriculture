@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Twin Agriculture Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>🌾 Digital Twin Agriculture Pro</h1>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left fade-in">
+
+        <h2>🎛️ Control Panel</h2>
+
+        <input id="temp" placeholder="Temperature">
+        <input id="humidity" placeholder="Humidity">
+        <input id="rainfall" placeholder="Rainfall">
+
+        <button onclick="predict()">Predict Crop</button>
+
+        <p id="result"></p>
+
+        <div class="card glow">
+            <h3>🧠 Smart Insights</h3>
+            <p id="insights">Waiting for data...</p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right fade-in">
+
+        <div class="card">
+            <h3>🌡️ Temperature</h3>
+            <canvas id="tempChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>💧 Humidity</h3>
+            <canvas id="humChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>🌧️ Rainfall</h3>
+            <canvas id="rainChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>📈 Yield Prediction</h3>
+            <canvas id="yieldChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
