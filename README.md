@@ -1,56 +1,93 @@
 # 🌾 Digital Twin Smart Agriculture System
 
-## 📌 Project Overview
-This project implements a **Digital Twin of a Smart Agriculture System** using Machine Learning and Web Technologies.
+## 📌 Overview
+The **Digital Twin Smart Agriculture System** is an AI-powered web application that simulates a real-world agricultural environment using machine learning and data-driven modeling.
 
-It simulates a real-world farm by modeling environmental conditions such as temperature, humidity, rainfall, and soil parameters, and provides real-time predictions and insights.
+It creates a **virtual replica (Digital Twin)** of a farm by continuously simulating environmental conditions and providing intelligent predictions for crop selection, irrigation, and yield estimation.
 
 ---
 
-## 🚀 Features
+## 🌐 Live Demo
+👉 https://digital-twin-agriculture.onrender.com
 
-- 🌡️ Real-time environmental simulation
-- 🌱 Crop prediction using Machine Learning
-- 📈 Yield prediction model
-- 💧 Smart irrigation recommendation system
-- 📊 Live dashboard with dynamic graphs
-- 🎛️ User input control panel (interactive simulation)
-- 🌐 Web-based interface using Flask
+> ⚠️ Note: The app may take 30–60 seconds to load initially due to free cloud hosting.
+
+---
+
+## 🚀 Key Features
+
+### 🔁 Digital Twin Simulation
+- Continuous simulation of farm conditions
+- Time-based environmental modeling
+
+### 🌱 Crop Prediction (ML Model)
+- Uses Random Forest Classifier
+- Predicts best crop based on:
+  - Temperature
+  - Humidity
+  - Rainfall
+  - Soil nutrients (N, P, K)
+
+### 📈 Yield Prediction
+- Estimates crop yield using environmental factors
+- Provides production insights
+
+### 💧 Smart Irrigation System
+- Intelligent irrigation recommendation:
+  - 🚨 High Priority  
+  - ⚠️ Moderate  
+  - ✅ Not Required  
+
+### 📊 Interactive Dashboard
+- Real-time graphs:
+  - Temperature
+  - Humidity
+  - Rainfall
+  - Yield
+- Smooth animations & live updates
+
+### 🎛️ User Control Panel
+- Modify environmental parameters manually
+- Observe real-time predictions
 
 ---
 
 ## 🧠 Digital Twin Concept
 
-This system acts as a **virtual replica of a farm** by:
-- Simulating environmental conditions over time
-- Predicting crop suitability
-- Providing actionable insights (irrigation, yield)
+This project implements a **Digital Twin** by:
+
+- Representing a physical farm as a virtual model  
+- Simulating real-world environmental changes  
+- Integrating machine learning for predictions  
+- Providing feedback for decision-making  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, Chart.js  
-- **Backend:** Flask (Python)  
-- **Machine Learning:** Scikit-learn (Random Forest)  
-- **Data Handling:** Pandas  
-- **Deployment:** Render  
+| Layer        | Technology Used |
+|-------------|----------------|
+| Frontend    | HTML, CSS, JavaScript, Chart.js |
+| Backend     | Flask (Python) |
+| ML Model    | Scikit-learn (Random Forest) |
+| Data        | Pandas |
+| Deployment  | Render |
 
 ---
 
 ## 📂 Project Structure
 digital_twin_agriculture/
 │
-├── app.py
-├── model.py
-├── model.pkl
+├── app.py # Flask backend
+├── model.py # ML model & simulation logic
+├── model.pkl # Trained model
 ├── dataset/
 │ └── crop_recommendation.csv
 ├── static/
-│ ├── style.css
-│ └── script.js
+│ ├── style.css # UI styling
+│ └── script.js # Frontend logic
 ├── templates/
-│ └── index.html
+│ └── index.html # Dashboard UI
 ├── requirements.txt
 └── Procfile
 
@@ -59,32 +96,35 @@ digital_twin_agriculture/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/digital-twin-agriculture.git
 cd digital-twin-agriculture
 
-2️⃣ Install dependencies
+2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the application
+3️⃣ Run the Application
 python app.py
 
-4️⃣ Open in browser
+4️⃣ Open in Browser
 http://127.0.0.1:5000/
 
-📊 How It Works
-Dataset simulates farm sensor data
+📊 System Workflow
+Dataset simulates real farm sensor data
 ML model predicts crop suitability
-Yield is estimated using environmental factors
-Dashboard visualizes real-time farm conditions
-User can modify inputs for simulation
+Yield is estimated using environmental inputs
+Digital twin updates continuously
+Dashboard visualizes real-time insights
+User can interact and modify conditions
 
-🌟 Future Improvements
-Integration with real IoT sensors
-Advanced deep learning models (LSTM)
-Mobile app interface
-Weather API integration
-
+🌟 Future Enhancements
+🔌 Integration with IoT sensors
+🌦️ Weather API integration
+🤖 Deep learning models (LSTM)
+📱 Mobile application
+☁️ Multi-farm digital twin system
 👨‍💻 Author
+
 Manas Mridul
+B.Tech Electrical & Computer Engineering
